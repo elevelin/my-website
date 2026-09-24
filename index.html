@@ -48,6 +48,56 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
 
+    <!-- Additional Inline Styling for the Blog Components -->
+    <style>
+      .blog-container {
+        margin-top: 3.5rem;
+        text-align: left;
+        width: 100%;
+      }
+      .blog-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+        padding-bottom: 0.5rem;
+      }
+      .blog-feed {
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+      }
+      .blog-post {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        padding: 1.25rem;
+        border-radius: 12px;
+        background: rgba(128, 128, 128, 0.05);
+        border: 1px solid rgba(128, 128, 128, 0.1);
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+      .blog-post:hover {
+        transform: translateY(-2px);
+        background: rgba(128, 128, 128, 0.08);
+      }
+      .blog-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0 0 0.4rem 0;
+      }
+      .blog-meta {
+        font-size: 0.85rem;
+        opacity: 0.6;
+        margin-bottom: 0.75rem;
+      }
+      .blog-excerpt {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin: 0;
+        opacity: 0.85;
+      }
+    </style>
+
   </head>
 
 <body>
@@ -68,7 +118,6 @@
             <!-- Navigation Links Stack -->
             <nav class="button-stack" aria-label="Links">
 
-
               <!-- Instagram Placeholder -->
               <a class="button button-instagram" href="https://instagram.com/touch.of.ambrosia" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
 
@@ -76,6 +125,29 @@
               <a class="button button-tiktok" href="https://tiktok.com" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">TikTok</a>
 
             </nav>
+
+            <!-- Integrated Blog Section -->
+            <section class="blog-container">
+              <h2 class="blog-heading">Latest From The Blog</h2>
+              
+              <div class="blog-feed">
+                
+                <!-- Blog Post 1 -->
+                <a href="blog/welcome-to-touch-of-ambrosia.html" class="blog-post">
+                  <h3 class="blog-title">Welcome to Touch of Ambrosia</h3>
+                  <div class="blog-meta"><time datetime="2026-09-23">September 23, 2026</time></div>
+                  <p class="blog-excerpt">Explore the inspirations, goals, and upcoming creations coming to this corner of the web...</p>
+                </a>
+
+                <!-- Blog Post 2 -->
+                <a href="blog/my-creative-process.html" class="blog-post">
+                  <h3 class="blog-title">Behind the Scenes of My Creative Process</h3>
+                  <div class="blog-meta"><time datetime="2026-09-10">September 10, 2026</time></div>
+                  <p class="blog-excerpt">A deep dive into how I turn ideas into realities, balance aesthetic choices, and overcome creative blocks...</p>
+                </a>
+
+              </div>
+            </section>
 
           </main>
         </div>
