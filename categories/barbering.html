@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbering | Touch of Ambrosia</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e5e5e5;
+            --accent-color: #c4b5a5;
+            --card-bg: #1e1e1e;
+            --border-color: #2d2d2d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+        }
+        header {
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+        }
+        nav a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+        .subtitle {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #ffffff;
+        }
+        .card p {
+            color: #cccccc;
+        }
+        .tag {
+            display: inline-block;
+            background: #2d2925;
+            color: var(--accent-color);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav><a href="../index.html">← Back to Touch of Ambrosia</a></nav>
+        <h1>Barbering</h1>
+        <p class="subtitle">Cuts, styles, techniques, transformations, and my journey into the world of barbering.</p>
+    </header>
+
+    <main class="grid">
+        <div class="card">
+            <span class="tag">Technique</span>
+            <h2>Mastering the Perfect Fade</h2>
+            <p>A breakdown of the guard sequences, guidelines, and blending techniques I use to achieve clean, seamless transitions.</p>
+        </div>
+        <div class="card">
+            <span class="tag">Transformation</span>
+            <h2>The Power of a Great Haircut</h2>
+            <p>Documenting recent client transformations and exploring how a tailored style impacts personal confidence and presence.</p>
+        </div>
+        <div class="card">
+            <span class="tag">Tools</span>
+            <h2>Essential Station Setup</h2>
+            <p>An inside look at the clippers, trimmers, shears, and maintenance routines that keep my workflow sharp and efficient.</p>
+        </div>
+    </main>
+
+</body>
+</html>

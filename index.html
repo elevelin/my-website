@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 
 <html class="theme-auto" lang="en">
@@ -13,7 +12,10 @@
     <link rel="icon" type="image/png" href="images/avatar.png">
 
     <!-- Meta Description -->
-    <meta name="description" content="Touch of Ambrosia is the creative home of Amber Rasmussen — exploring barbering, art, technology, entrepreneurship, and everything in between.">
+    <meta
+      name="description"
+      content="Touch of Ambrosia is the creative home of Amber Rasmussen — exploring barbering, art, technology, entrepreneurship, and everything in between."
+    >
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://touchofambrosia.com">
@@ -28,15 +30,38 @@
     <!-- Social Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Amber Rasmussen | Touch of Ambrosia">
-    <meta property="og:description" content="Barbering, art, technology, entrepreneurship, and creative projects by Amber Rasmussen.">
+    <meta
+      property="og:description"
+      content="Barbering, art, technology, entrepreneurship, and creative projects by Amber Rasmussen."
+    >
     <meta property="og:url" content="https://touchofambrosia.com">
     <meta property="og:image" content="https://touchofambrosia.com/images/avatar.png">
     <meta name="twitter:card" content="summary">
 
     <!-- Font Preloads -->
-    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_greek-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link
+      rel="preload"
+      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+
+    <link
+      rel="preload"
+      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_greek-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+
+    <link
+      rel="preload"
+      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
@@ -101,12 +126,14 @@
         text-decoration: none;
         transition:
           transform 0.2s ease,
-          background 0.2s ease;
+          background 0.2s ease,
+          border-color 0.2s ease;
       }
 
       .creative-card:hover {
         transform: translateY(-3px);
         background: rgba(128, 128, 128, 0.09);
+        border-color: rgba(128, 128, 128, 0.2);
       }
 
       .creative-card h3 {
@@ -280,32 +307,59 @@
 
             <div class="creative-grid">
 
-              <a href="#" class="creative-card">
+              <!-- Barbering -->
+              <a
+                href="categories/barbering.html"
+                class="creative-card"
+                aria-label="Explore Barbering"
+              >
                 <h3>Barbering</h3>
+
                 <p>
                   Cuts, styles, techniques, transformations, and my journey
                   into the world of barbering.
                 </p>
               </a>
 
-              <a href="#" class="creative-card">
-                <h3>Art & Design</h3>
+
+              <!-- Art -->
+              <a
+                href="categories/art.html"
+                class="creative-card"
+                aria-label="Explore Art and Design"
+              >
+                <h3>Art &amp; Design</h3>
+
                 <p>
                   Visual experiments, creative projects, aesthetics, and
                   things I make simply because I have to.
                 </p>
               </a>
 
-              <a href="#" class="creative-card">
-                <h3>Tech & Digital</h3>
+
+              <!-- Technology -->
+              <a
+                href="categories/technology.html"
+                class="creative-card"
+                aria-label="Explore Technology and Digital Projects"
+              >
+                <h3>Tech &amp; Digital</h3>
+
                 <p>
                   Websites, automation, experiments, tools, and digital
                   projects I'm building along the way.
                 </p>
               </a>
 
-              <a href="#" class="creative-card">
-                <h3>Business & Ideas</h3>
+
+              <!-- Business -->
+              <a
+                href="categories/business.html"
+                class="creative-card"
+                aria-label="Explore Business and Ideas"
+              >
+                <h3>Business &amp; Ideas</h3>
+
                 <p>
                   Side projects, entrepreneurial experiments, ideas,
                   brands, and turning concepts into something real.
@@ -325,6 +379,7 @@
             </h2>
 
             <div class="blog-feed">
+
 
               <!-- Blog Post 1 -->
               <a
@@ -361,8 +416,8 @@
                 </h3>
 
                 <div class="blog-meta">
-                  <time datetime="2026-09-10">
-                    September 10, 2026
+                  <time datetime="2026-09-24">
+                    September 24, 2026
                   </time>
                 </div>
 
@@ -372,6 +427,7 @@
                 </p>
 
               </a>
+
 
             </div>
 
@@ -385,4 +441,3 @@
   </body>
 
 </html>
-```

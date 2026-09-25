@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech & Digital | Touch of Ambrosia</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e5e5e5;
+            --accent-color: #a5b5c4;
+            --card-bg: #1e1e1e;
+            --border-color: #2d2d2d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+        }
+        header {
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+        }
+        nav a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+        .subtitle {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #ffffff;
+        }
+        .card p {
+            color: #cccccc;
+        }
+        .tag {
+            display: inline-block;
+            background: #25282d;
+            color: var(--accent-color);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav><a href="../index.html">← Back to Touch of Ambrosia</a></nav>
+        <h1>Tech & Digital</h1>
+        <p class="subtitle">Websites, automation, experiments, tools, and digital projects I'm building along the way.</p>
+    </header>
+
+    <main class="grid">
+        <div class="card">
+            <span class="tag">Web Dev</span>
+            <h2>Building From Scratch</h2>
+            <p>Why I prefer writing clean, lightweight HTML/CSS environments over bulky website builders to host my portfolio.</p>
+        </div>
+        <div class="card">
+            <span class="tag">Automation</span>
+            <h2>Streamlining Creative Workflow</h2>
+            <p>Setting up background scripts and shortcuts to handle file exports, image optimizations, and content scheduling.</p>
+        </div>
+        <div class="card">
+            <span class="tag">AI Integration</span>
+            <h2>Coding with AI Companions</h2>
+            <p>Exploring how leveraging natural language AI tools speeds up my development timeline and solves layout hurdles.</p>
+        </div>
+    </main>
+
+</body>
+</html>
