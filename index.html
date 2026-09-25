@@ -1,11 +1,5 @@
+```html
 <!DOCTYPE html>
-
-<!--
-  To change the theme, change the class on the html tag below to one of:
-  - theme-auto: Automatically switches based on user's system preferences
-  - theme-light: Forces light theme
-  - theme-dark: Forces dark theme
--->
 
 <html class="theme-auto" lang="en">
 
@@ -15,32 +9,33 @@
 
     <!-- Page Title -->
     <title>Amber Rasmussen | Touch of Ambrosia</title>
-    <link class="icon" type="image/png" href="images/avatar.png">
+
+    <link rel="icon" type="image/png" href="images/avatar.png">
 
     <!-- Meta Description -->
-    <meta name="description" content="Welcome to Touch of Ambrosia. Explore my latest projects, social links, and updates here.">
+    <meta name="description" content="Touch of Ambrosia is the creative home of Amber Rasmussen — exploring barbering, art, technology, entrepreneurship, and everything in between.">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://touchofambrosia.com">
 
-    <!-- Author Information -->
+    <!-- Author -->
     <meta name="author" content="Amber Rasmussen">
 
     <!-- Browser UI Color -->
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
 
-    <!-- Social Sharing (Open Graph & Twitter) -->
+    <!-- Social Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Amber Rasmussen | Touch of Ambrosia">
-    <meta property="og:description" content="Explore my latest projects, social links, and updates.">
+    <meta property="og:description" content="Barbering, art, technology, entrepreneurship, and creative projects by Amber Rasmussen.">
     <meta property="og:url" content="https://touchofambrosia.com">
-    <meta property="og:image" content="https://touchofambrosia.com">
+    <meta property="og:image" content="https://touchofambrosia.com/images/avatar.png">
     <meta name="twitter:card" content="summary">
 
     <!-- Font Preloads -->
     <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_greek-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Stylesheets -->
@@ -48,24 +43,108 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
 
-    <!-- Additional Inline Styling for the Blog Components -->
+    <!-- Homepage Styling -->
     <style>
+
+      /* =========================
+         INTRO
+      ========================= */
+
+      .intro {
+        margin: 1.25rem auto 2rem;
+        max-width: 600px;
+      }
+
+      .intro p {
+        margin-top: 0.75rem;
+        line-height: 1.6;
+        opacity: 0.8;
+      }
+
+      .eyebrow {
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        opacity: 0.55;
+        margin-bottom: 0.5rem;
+      }
+
+
+      /* =========================
+         CREATIVE AREAS
+      ========================= */
+
+      .creative-section {
+        margin-top: 2.5rem;
+        text-align: left;
+      }
+
+      .section-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .creative-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .creative-card {
+        display: block;
+        padding: 1.25rem;
+        border-radius: 12px;
+        background: rgba(128, 128, 128, 0.05);
+        border: 1px solid rgba(128, 128, 128, 0.1);
+        color: inherit;
+        text-decoration: none;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease;
+      }
+
+      .creative-card:hover {
+        transform: translateY(-3px);
+        background: rgba(128, 128, 128, 0.09);
+      }
+
+      .creative-card h3 {
+        margin: 0 0 0.4rem;
+        font-size: 1.05rem;
+      }
+
+      .creative-card p {
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        opacity: 0.7;
+      }
+
+
+      /* =========================
+         BLOG
+      ========================= */
+
       .blog-container {
         margin-top: 3.5rem;
         text-align: left;
         width: 100%;
       }
+
       .blog-heading {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
         border-bottom: 1px solid rgba(128, 128, 128, 0.2);
         padding-bottom: 0.5rem;
       }
+
       .blog-feed {
         display: flex;
         flex-direction: column;
-        gap: 1.75rem;
+        gap: 1.25rem;
       }
+
       .blog-post {
         display: block;
         text-decoration: none;
@@ -74,84 +153,236 @@
         border-radius: 12px;
         background: rgba(128, 128, 128, 0.05);
         border: 1px solid rgba(128, 128, 128, 0.1);
-        transition: transform 0.2s ease, background 0.2s ease;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease;
       }
+
       .blog-post:hover {
         transform: translateY(-2px);
         background: rgba(128, 128, 128, 0.08);
       }
+
       .blog-title {
         font-size: 1.2rem;
         font-weight: 700;
-        margin: 0 0 0.4rem 0;
+        margin: 0 0 0.4rem;
       }
+
       .blog-meta {
         font-size: 0.85rem;
         opacity: 0.6;
         margin-bottom: 0.75rem;
       }
+
       .blog-excerpt {
         font-size: 0.95rem;
         line-height: 1.5;
         margin: 0;
         opacity: 0.85;
       }
+
+
+      /* =========================
+         MOBILE
+      ========================= */
+
+      @media (max-width: 500px) {
+
+        .creative-grid {
+          grid-template-columns: 1fr;
+        }
+
+      }
+
     </style>
 
   </head>
 
-<body>
+
+  <body>
 
     <div class="container">
-        <div class="column">
-          <main>
+      <div class="column">
 
-            <!-- Profile Avatar Image -->
-            <img class="avatar avatar--rounded" src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="Amber Rasmussen Profile Picture" width="128" height="128" fetchpriority="high">
+        <main>
 
-            <!-- Name / Brand Title -->
-            <h1>Amber Rasmussen</h1>
+          <!-- Profile -->
+          <img
+            class="avatar avatar--rounded"
+            src="images/avatar.png"
+            srcset="images/avatar@2x.png 2x"
+            alt="Amber Rasmussen Profile Picture"
+            width="128"
+            height="128"
+            fetchpriority="high"
+          >
 
-            <!-- Bio / Tagline -->
-            <p>Welcome to Touch of Ambrosia</p>
+          <h1>Amber Rasmussen</h1>
 
-            <!-- Navigation Links Stack -->
-            <nav class="button-stack" aria-label="Links">
+          <div class="intro">
 
-              <!-- Instagram Placeholder -->
-              <a class="button button-instagram" href="https://instagram.com/touch.of.ambrosia" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
+            <div class="eyebrow">
+              Creator • Entrepreneur • Builder
+            </div>
 
-              <!-- TikTok Placeholder -->
-              <a class="button button-tiktok" href="https://tiktok.com" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">TikTok</a>
+            <p>
+              Welcome to <strong>Touch of Ambrosia</strong> — my creative
+              corner of the internet where barbering, art, technology,
+              business, and whatever I'm building next come together.
+            </p>
 
-            </nav>
+          </div>
 
-            <!-- Integrated Blog Section -->
-            <section class="blog-container">
-              <h2 class="blog-heading">Latest From The Blog</h2>
-              
-              <div class="blog-feed">
-                
-                <!-- Blog Post 1 -->
-                <a href="blog/welcome-to-touch-of-ambrosia.html" class="blog-post">
-                  <h3 class="blog-title">Welcome to Touch of Ambrosia</h3>
-                  <div class="blog-meta"><time datetime="2026-09-23">September 23, 2026</time></div>
-                  <p class="blog-excerpt">Explore the inspirations, goals, and upcoming creations coming to this corner of the web...</p>
-                </a>
 
-                <!-- Blog Post 2 -->
-                <a href="blog/my-creative-process.html" class="blog-post">
-                  <h3 class="blog-title">Behind the Scenes of My Creative Process</h3>
-                  <div class="blog-meta"><time datetime="2026-09-10">September 10, 2026</time></div>
-                  <p class="blog-excerpt">A deep dive into how I turn ideas into realities, balance aesthetic choices, and overcome creative blocks...</p>
-                </a>
+          <!-- Social Links -->
+          <nav class="button-stack" aria-label="Social Links">
 
-              </div>
-            </section>
+            <a
+              class="button button-instagram"
+              href="https://instagram.com/touch.of.ambrosia"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                class="icon"
+                aria-hidden="true"
+                src="images/icons/instagram.svg"
+                alt=""
+              >
+              Instagram
+            </a>
 
-          </main>
-        </div>
+            <a
+              class="button button-tiktok"
+              href="https://tiktok.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                class="icon"
+                aria-hidden="true"
+                src="images/icons/tiktok.svg"
+                alt=""
+              >
+              TikTok
+            </a>
+
+          </nav>
+
+
+          <!-- Creative Areas -->
+          <section class="creative-section">
+
+            <h2 class="section-heading">
+              What I'm Creating
+            </h2>
+
+            <div class="creative-grid">
+
+              <a href="#" class="creative-card">
+                <h3>Barbering</h3>
+                <p>
+                  Cuts, styles, techniques, transformations, and my journey
+                  into the world of barbering.
+                </p>
+              </a>
+
+              <a href="#" class="creative-card">
+                <h3>Art & Design</h3>
+                <p>
+                  Visual experiments, creative projects, aesthetics, and
+                  things I make simply because I have to.
+                </p>
+              </a>
+
+              <a href="#" class="creative-card">
+                <h3>Tech & Digital</h3>
+                <p>
+                  Websites, automation, experiments, tools, and digital
+                  projects I'm building along the way.
+                </p>
+              </a>
+
+              <a href="#" class="creative-card">
+                <h3>Business & Ideas</h3>
+                <p>
+                  Side projects, entrepreneurial experiments, ideas,
+                  brands, and turning concepts into something real.
+                </p>
+              </a>
+
+            </div>
+
+          </section>
+
+
+          <!-- Blog -->
+          <section class="blog-container">
+
+            <h2 class="blog-heading">
+              From The Journal
+            </h2>
+
+            <div class="blog-feed">
+
+              <!-- Blog Post 1 -->
+              <a
+                href="blog/welcome-to-touch-of-ambrosia.html"
+                class="blog-post"
+              >
+
+                <h3 class="blog-title">
+                  Welcome to Touch of Ambrosia
+                </h3>
+
+                <div class="blog-meta">
+                  <time datetime="2026-09-23">
+                    September 23, 2026
+                  </time>
+                </div>
+
+                <p class="blog-excerpt">
+                  Why I created Touch of Ambrosia and what I'm planning to
+                  build, create, and explore along the way.
+                </p>
+
+              </a>
+
+
+              <!-- Blog Post 2 -->
+              <a
+                href="blog/my-creative-process.html"
+                class="blog-post"
+              >
+
+                <h3 class="blog-title">
+                  Behind the Scenes of My Creative Process
+                </h3>
+
+                <div class="blog-meta">
+                  <time datetime="2026-09-10">
+                    September 10, 2026
+                  </time>
+                </div>
+
+                <p class="blog-excerpt">
+                  A look at how random ideas become actual projects — and
+                  why I rarely stick to just one thing.
+                </p>
+
+              </a>
+
+            </div>
+
+          </section>
+
+        </main>
+
+      </div>
     </div>
 
-</body>
+  </body>
+
 </html>
+```
