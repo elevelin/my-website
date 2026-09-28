@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="theme-auto" lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Journal | Touch of Ambrosia</title>
+
+  <meta
+    name="description"
+    content="The Touch of Ambrosia Journal — thoughts, projects, creative experiments, barbering, technology, business, and everything in between."
+  >
+
+  <link
+    rel="canonical"
+    href="https://touchofambrosia.com/blog.html"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="images/avatar.png"
+  >
+
+
+  <!-- Stylesheets -->
+
+  <link
+    rel="stylesheet"
+    href="css/reset.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/brands.css"
+  >
+
+
+  <style>
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    .site-nav {
+      width: 100%;
+      margin: 0 auto 2.5rem;
+      padding: 0.75rem 0;
+      border-top: 1px solid rgba(128, 128, 128, 0.15);
+      border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+    }
+
+    .site-nav-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .site-nav a {
+      display: inline-block;
+      padding: 0.5rem 0.7rem;
+      border-radius: 7px;
+      color: inherit;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 700;
+      opacity: 0.65;
+      transition:
+        background 0.2s ease,
+        opacity 0.2s ease;
+    }
+
+    .site-nav a:hover {
+      background: rgba(128, 128, 128, 0.08);
+      opacity: 1;
+    }
+
+    .site-nav a.active {
+      background: rgba(128, 128, 128, 0.08);
+      opacity: 1;
+    }
+
+
+    /* =========================
+       JOURNAL INTRO
+    ========================= */
+
+    .journal-intro {
+      margin: 1.25rem auto 3rem;
+      max-width: 650px;
+      text-align: center;
+    }
+
+    .journal-intro h1 {
+      margin-bottom: 0.75rem;
+    }
+
+    .journal-intro p {
+      margin: 0;
+      line-height: 1.7;
+      opacity: 0.75;
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.55;
+      margin-bottom: 0.5rem;
+    }
+
+
+    /* =========================
+       JOURNAL POSTS
+    ========================= */
+
+    .journal-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .journal-card {
+      display: block;
+      padding: 1.5rem;
+      border-radius: 12px;
+      background: rgba(128, 128, 128, 0.05);
+      border: 1px solid rgba(128, 128, 128, 0.1);
+      color: inherit;
+      text-decoration: none;
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .journal-card:hover {
+      transform: translateY(-3px);
+      background: rgba(128, 128, 128, 0.09);
+      border-color: rgba(128, 128, 128, 0.2);
+    }
+
+    .journal-date {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.5;
+      margin-bottom: 0.6rem;
+    }
+
+    .journal-card h2 {
+      margin: 0 0 0.6rem;
+      font-size: 1.3rem;
+    }
+
+    .journal-card p {
+      margin: 0;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      opacity: 0.7;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      opacity: 0.8;
+    }
+
+
+    /* =========================
+       FOOTER MESSAGE
+    ========================= */
+
+    .journal-footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(128, 128, 128, 0.15);
+      text-align: center;
+      font-size: 0.8rem;
+      opacity: 0.55;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 500px) {
+
+      .site-nav-inner {
+        gap: 0.15rem;
+      }
+
+      .site-nav a {
+        padding: 0.45rem 0.5rem;
+        font-size: 0.72rem;
+      }
+
+      .journal-card {
+        padding: 1.25rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <div class="container">
+
+    <div class="column">
+
+      <main>
+
+
+        <!-- Site Navigation -->
+
+        <nav
+          class="site-nav"
+          aria-label="Main Navigation"
+        >
+
+          <div class="site-nav-inner">
+
+            <a href="index.html">
+              Home
+            </a>
+
+            <a href="categories/barbering.html">
+              Barbering
+            </a>
+
+            <a href="categories/art.html">
+              Art
+            </a>
+
+            <a href="categories/technology.html">
+              Tech
+            </a>
+
+            <a href="categories/business.html">
+              Business
+            </a>
+
+            <a href="shop.html">
+              Shop
+            </a>
+
+            <a
+              href="blog.html"
+              class="active"
+              aria-current="page"
+            >
+              Journal
+            </a>
+
+          </div>
+
+        </nav>
+
+
+        <!-- Journal Introduction -->
+
+        <header class="journal-intro">
+
+          <div class="eyebrow">
+            Touch of Ambrosia
+          </div>
+
+          <h1>
+            The Journal
+          </h1>
+
+          <p>
+            Thoughts, projects, experiments, lessons, and everything I'm
+            currently creating, learning, or figuring out.
+          </p>
+
+        </header>
+
+
+        <!-- Journal Posts -->
+
+        <section
+          class="journal-list"
+          aria-label="Journal Articles"
+        >
+
+
+          <!-- Welcome Post -->
+
+          <a
+            class="journal-card"
+            href="blog/welcome-to-touch-of-ambrosia.html"
+          >
+
+            <div class="journal-date">
+              September 23, 2026
+            </div>
+
+            <h2>
+              Welcome to Touch of Ambrosia
+            </h2>
+
+            <p>
+              Why I created Touch of Ambrosia and what I'm planning to
+              build, create, and explore along the way.
+            </p>
+
+            <span class="read-more">
+              Read Article →
+            </span>
+
+          </a>
+
+
+          <!-- Creative Process Post -->
+
+          <a
+            class="journal-card"
+            href="blog/my-creative-process.html"
+          >
+
+            <div class="journal-date">
+              September 24, 2026
+            </div>
+
+            <h2>
+              Behind the Scenes of My Creative Process
+            </h2>
+
+            <p>
+              A look at how random ideas become actual projects — and why
+              I rarely stick to just one thing.
+            </p>
+
+            <span class="read-more">
+              Read Article →
+            </span>
+
+          </a>
+
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <div class="journal-footer">
+
+          More stories, projects, and experiments coming soon.
+
+        </div>
+
+
+      </main>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,554 +1,372 @@
 <!DOCTYPE html>
 <html class="theme-auto" lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
 
-    <!-- Page Title -->
-    <title>Shop Barber & Grooming Products | Touch of Ambrosia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="images/avatar.png">
+  <title>Shop My Picks | Touch of Ambrosia</title>
 
-    <!-- Meta Description -->
-    <meta
-      name="description"
-      content="Shop barbering, grooming, and hair care products selected by Amber Rasmussen of Touch of Ambrosia."
-    >
+  <meta
+    name="description"
+    content="Shop barbering, grooming, and beauty products selected by Amber Rasmussen of Touch of Ambrosia."
+  >
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://touchofambrosia.com/shop.html">
+  <link rel="canonical" href="https://touchofambrosia.com/shop.html">
 
-    <!-- Author -->
-    <meta name="author" content="Amber Rasmussen">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/brands.css">
 
-    <!-- Browser UI Color -->
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <style>
+    .site-nav {
+      width: 100%;
+      margin: 0 auto 2.5rem;
+      padding: 0.75rem 0;
+      border-top: 1px solid rgba(128, 128, 128, 0.15);
+      border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+    }
 
-    <!-- Social Sharing -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Shop | Touch of Ambrosia">
-    <meta
-      property="og:description"
-      content="Barbering, grooming, and hair care products selected by Touch of Ambrosia."
-    >
-    <meta property="og:url" content="https://touchofambrosia.com/shop.html">
-    <meta property="og:image" content="https://touchofambrosia.com/images/avatar.png">
-    <meta name="twitter:card" content="summary">
+    .site-nav-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
 
-    <!-- Font Preloads -->
-    <link
-      rel="preload"
-      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
+    .site-nav a {
+      display: inline-block;
+      padding: 0.5rem 0.7rem;
+      border-radius: 7px;
+      color: inherit;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 700;
+      opacity: 0.65;
+      transition: background 0.2s ease, opacity 0.2s ease;
+    }
 
-    <link
-      rel="preload"
-      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_greek-700.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
+    .site-nav a:hover {
+      background: rgba(128, 128, 128, 0.08);
+      opacity: 1;
+    }
 
-    <link
-      rel="preload"
-      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
+    .site-nav a.active {
+      background: rgba(128, 128, 128, 0.08);
+      opacity: 1;
+    }
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/brands.css">
+    .shop-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
 
-    <!-- Shop Styling -->
-    <style>
+    .shop-intro .eyebrow {
+      margin-bottom: 0.5rem;
+    }
 
-      /* =========================
-         SHOP PAGE
-      ========================= */
+    .shop-intro h1 {
+      margin-bottom: 0.75rem;
+    }
 
-      .shop-container {
-        margin: 2rem auto;
-        max-width: 700px;
-        text-align: left;
-      }
+    .shop-intro p {
+      max-width: 650px;
+      margin: 0 auto;
+      opacity: 0.75;
+      line-height: 1.7;
+    }
 
+    .shop-categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
 
-      /* =========================
-         BACK LINK
-      ========================= */
+    .shop-category {
+      padding: 0.45rem 0.8rem;
+      border: 1px solid rgba(128, 128, 128, 0.2);
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      opacity: 0.75;
+    }
 
-      .back-link {
-        display: inline-block;
-        margin-bottom: 2rem;
-        color: inherit;
-        text-decoration: none;
-        opacity: 0.6;
-        font-weight: 700;
-      }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
 
-      .back-link:hover {
-        opacity: 1;
-      }
+    .product-card {
+      border: 1px solid rgba(128, 128, 128, 0.15);
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(128, 128, 128, 0.03);
+    }
 
+    .product-image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+      background: rgba(128, 128, 128, 0.08);
+    }
 
-      /* =========================
-         HEADER
-      ========================= */
+    .product-content {
+      padding: 1.15rem;
+    }
 
-      .shop-header {
-        margin-bottom: 2.5rem;
-        border-bottom: 1px solid rgba(128, 128, 128, 0.2);
-        padding-bottom: 1.5rem;
-      }
+    .product-category {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.55;
+      margin-bottom: 0.4rem;
+    }
 
-      .eyebrow {
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        opacity: 0.55;
-        margin-bottom: 0.5rem;
-      }
+    .product-name {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
 
-      .shop-header h1 {
-        margin-bottom: 0.75rem;
-      }
+    .product-description {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      opacity: 0.7;
+      margin-bottom: 1rem;
+    }
 
-      .shop-header p {
-        margin: 0;
-        line-height: 1.6;
-        opacity: 0.8;
-      }
+    .product-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
 
+    .product-price {
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
 
-      /* =========================
-         CATEGORIES
-      ========================= */
+    .product-link {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: inherit;
+      opacity: 0.7;
+    }
 
-      .shop-categories {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-bottom: 2rem;
-      }
+    .product-link:hover {
+      opacity: 1;
+    }
 
-      .shop-category {
-        padding: 0.5rem 0.8rem;
-        border-radius: 999px;
-        background: rgba(128, 128, 128, 0.08);
-        border: 1px solid rgba(128, 128, 128, 0.12);
-        font-size: 0.8rem;
-        opacity: 0.8;
-      }
+    .shop-note {
+      text-align: center;
+      max-width: 650px;
+      margin: 2.5rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(128, 128, 128, 0.15);
+      font-size: 0.8rem;
+      line-height: 1.7;
+      opacity: 0.55;
+    }
 
-
-      /* =========================
-         PRODUCT GRID
-      ========================= */
-
+    @media (max-width: 650px) {
       .product-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .site-nav-inner {
+        gap: 0.15rem;
       }
 
-
-      /* =========================
-         PRODUCT CARD
-      ========================= */
-
-      .product-card {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        border-radius: 12px;
-        background: rgba(128, 128, 128, 0.05);
-        border: 1px solid rgba(128, 128, 128, 0.1);
-        transition:
-          transform 0.2s ease,
-          background 0.2s ease,
-          border-color 0.2s ease;
+      .site-nav a {
+        padding: 0.45rem 0.5rem;
+        font-size: 0.72rem;
       }
-
-      .product-card:hover {
-        transform: translateY(-3px);
-        background: rgba(128, 128, 128, 0.09);
-        border-color: rgba(128, 128, 128, 0.2);
-      }
-
-
-      /* =========================
-         PRODUCT IMAGE
-      ========================= */
-
-      .product-image {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        display: block;
-        background: rgba(128, 128, 128, 0.08);
-      }
-
-
-      /* =========================
-         PRODUCT INFO
-      ========================= */
-
-      .product-info {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        padding: 1rem;
-      }
-
-      .product-category {
-        font-size: 0.7rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        opacity: 0.5;
-        margin-bottom: 0.4rem;
-      }
-
-      .product-name {
-        font-size: 1rem;
-        margin: 0 0 0.5rem;
-      }
-
-      .product-description {
-        font-size: 0.85rem;
-        line-height: 1.5;
-        opacity: 0.7;
-        margin: 0 0 1rem;
-      }
-
-      .product-price {
-        font-size: 1rem;
-        font-weight: 700;
-        margin-top: auto;
-        margin-bottom: 0.75rem;
-      }
-
-
-      /* =========================
-         BUY BUTTON
-      ========================= */
-
-      .product-button {
-        display: block;
-        width: 100%;
-        padding: 0.7rem 1rem;
-        border-radius: 8px;
-        background: rgba(128, 128, 128, 0.12);
-        border: 1px solid rgba(128, 128, 128, 0.15);
-        color: inherit;
-        text-align: center;
-        text-decoration: none;
-        font-size: 0.85rem;
-        font-weight: 700;
-        transition:
-          background 0.2s ease,
-          border-color 0.2s ease;
-      }
-
-      .product-button:hover {
-        background: rgba(128, 128, 128, 0.2);
-        border-color: rgba(128, 128, 128, 0.25);
-      }
-
-
-      /* =========================
-         SHOP NOTE
-      ========================= */
-
-      .shop-note {
-        margin-top: 2.5rem;
-        padding: 1rem;
-        border-left: 3px solid rgba(128, 128, 128, 0.35);
-        font-size: 0.85rem;
-        line-height: 1.5;
-        opacity: 0.65;
-      }
-
-
-      /* =========================
-         MOBILE
-      ========================= */
-
-      @media (max-width: 500px) {
-
-        .product-grid {
-          grid-template-columns: 1fr;
-        }
-
-      }
-
-    </style>
-
-  </head>
-
-
-  <body>
-
-    <div class="container">
-      <div class="column">
-
-        <main class="shop-container">
-
-
-          <!-- Back to Homepage -->
-
-          <a
-            class="back-link"
-            href="index.html"
-          >
-            ← Back to Touch of Ambrosia
-          </a>
-
-
-          <!-- Shop Header -->
-
-          <header class="shop-header">
-
-            <div class="eyebrow">
-              Touch of Ambrosia Retail
-            </div>
-
-            <h1>
-              Shop My Picks
-            </h1>
-
-            <p>
-              Barbering and grooming products I've selected for their
-              performance, quality, and usefulness. Browse the products
-              available for purchase and find something worth adding to
-              your routine.
-            </p>
-
-          </header>
-
-
-          <!-- Categories -->
-
-          <div class="shop-categories">
-
-            <span class="shop-category">
-              Hair
-            </span>
-
-            <span class="shop-category">
-              Styling
-            </span>
-
-            <span class="shop-category">
-              Grooming
-            </span>
-
-            <span class="shop-category">
-              Barbering
-            </span>
-
-          </div>
-
-
-          <!-- Products -->
-
-          <section class="product-grid">
-
-
-            <!-- PRODUCT 1 -->
-
-            <article class="product-card">
-
-              <img
-                class="product-image"
-                src="images/products/product-1.jpg"
-                alt="Product Name"
-              >
-
-              <div class="product-info">
-
-                <div class="product-category">
-                  Styling
-                </div>
-
-                <h2 class="product-name">
-                  Product Name
-                </h2>
-
-                <p class="product-description">
-                  Add a short description of the product here.
-                </p>
-
-                <div class="product-price">
-                  $00.00
-                </div>
-
-                <a
-                  class="product-button"
-                  href="#"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Shop Now →
-                </a>
-
-              </div>
-
-            </article>
-
-
-            <!-- PRODUCT 2 -->
-
-            <article class="product-card">
-
-              <img
-                class="product-image"
-                src="images/products/product-2.jpg"
-                alt="Product Name"
-              >
-
-              <div class="product-info">
-
-                <div class="product-category">
-                  Grooming
-                </div>
-
-                <h2 class="product-name">
-                  Product Name
-                </h2>
-
-                <p class="product-description">
-                  Add a short description of the product here.
-                </p>
-
-                <div class="product-price">
-                  $00.00
-                </div>
-
-                <a
-                  class="product-button"
-                  href="#"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Shop Now →
-                </a>
-
-              </div>
-
-            </article>
-
-
-            <!-- PRODUCT 3 -->
-
-            <article class="product-card">
-
-              <img
-                class="product-image"
-                src="images/products/product-3.jpg"
-                alt="Product Name"
-              >
-
-              <div class="product-info">
-
-                <div class="product-category">
-                  Hair
-                </div>
-
-                <h2 class="product-name">
-                  Product Name
-                </h2>
-
-                <p class="product-description">
-                  Add a short description of the product here.
-                </p>
-
-                <div class="product-price">
-                  $00.00
-                </div>
-
-                <a
-                  class="product-button"
-                  href="#"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Shop Now →
-                </a>
-
-              </div>
-
-            </article>
-
-
-            <!-- PRODUCT 4 -->
-
-            <article class="product-card">
-
-              <img
-                class="product-image"
-                src="images/products/product-4.jpg"
-                alt="Product Name"
-              >
-
-              <div class="product-info">
-
-                <div class="product-category">
-                  Barbering
-                </div>
-
-                <h2 class="product-name">
-                  Product Name
-                </h2>
-
-                <p class="product-description">
-                  Add a short description of the product here.
-                </p>
-
-                <div class="product-price">
-                  $00.00
-                </div>
-
-                <a
-                  class="product-button"
-                  href="#"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Shop Now →
-                </a>
-
-              </div>
-
-            </article>
-
-
-          </section>
-
-
-          <!-- Shop Note -->
-
-          <div class="shop-note">
-            Product availability, pricing, and purchasing are handled through
-            the retailer linked to each product. Product selection may change
-            over time.
-          </div>
-
-
-        </main>
-
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <nav class="site-nav" aria-label="Main Navigation">
+      <div class="site-nav-inner">
+        <a href="index.html">Home</a>
+        <a href="categories/barbering.html">Barbering</a>
+        <a href="categories/art.html">Art</a>
+        <a href="categories/technology.html">Tech</a>
+        <a href="categories/business.html">Business</a>
+        <a href="shop.html" class="active" aria-current="page">Shop</a>
+        <a href="blog.html">Journal</a>
       </div>
+    </nav>
+
+    <header class="shop-intro">
+      <div class="eyebrow">Touch of Ambrosia Retail</div>
+
+      <h1>Shop My Picks</h1>
+
+      <p>
+        Barbering, grooming, and beauty products I've selected for their
+        quality, performance, and usefulness.
+      </p>
+    </header>
+
+    <div class="shop-categories">
+      <span class="shop-category">Hair</span>
+      <span class="shop-category">Styling</span>
+      <span class="shop-category">Grooming</span>
+      <span class="shop-category">Barbering</span>
     </div>
 
-  </body>
+    <section class="product-grid" aria-label="Featured Products">
 
+      <article class="product-card">
+        <img
+          class="product-image"
+          src="images/products/product-1.jpg"
+          alt="Featured hair product"
+        >
+
+        <div class="product-content">
+          <div class="product-category">Hair</div>
+
+          <h2 class="product-name">Product Name</h2>
+
+          <p class="product-description">
+            A short description of why I like this product and what I use it for.
+          </p>
+
+          <div class="product-bottom">
+            <span class="product-price">$00.00</span>
+
+            <a
+              class="product-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Shop Now →
+            </a>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="product-card">
+        <img
+          class="product-image"
+          src="images/products/product-2.jpg"
+          alt="Featured styling product"
+        >
+
+        <div class="product-content">
+          <div class="product-category">Styling</div>
+
+          <h2 class="product-name">Product Name</h2>
+
+          <p class="product-description">
+            A short description of why I like this product and what I use it for.
+          </p>
+
+          <div class="product-bottom">
+            <span class="product-price">$00.00</span>
+
+            <a
+              class="product-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Shop Now →
+            </a>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="product-card">
+        <img
+          class="product-image"
+          src="images/products/product-3.jpg"
+          alt="Featured grooming product"
+        >
+
+        <div class="product-content">
+          <div class="product-category">Grooming</div>
+
+          <h2 class="product-name">Product Name</h2>
+
+          <p class="product-description">
+            A short description of why I like this product and what I use it for.
+          </p>
+
+          <div class="product-bottom">
+            <span class="product-price">$00.00</span>
+
+            <a
+              class="product-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Shop Now →
+            </a>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="product-card">
+        <img
+          class="product-image"
+          src="images/products/product-4.jpg"
+          alt="Featured barbering product"
+        >
+
+        <div class="product-content">
+          <div class="product-category">Barbering</div>
+
+          <h2 class="product-name">Product Name</h2>
+
+          <p class="product-description">
+            A short description of why I like this product and what I use it for.
+          </p>
+
+          <div class="product-bottom">
+            <span class="product-price">$00.00</span>
+
+            <a
+              class="product-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Shop Now →
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <p class="shop-note">
+      Product availability and pricing may change. Products are linked to
+      their respective retailers for purchasing.
+    </p>
+
+  </main>
+
+</body>
 </html>
