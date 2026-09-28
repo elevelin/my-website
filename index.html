@@ -30,15 +30,27 @@
     <!-- Social Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Amber Rasmussen | Touch of Ambrosia">
+
     <meta
       property="og:description"
       content="Barbering, art, technology, entrepreneurship, and creative projects by Amber Rasmussen."
     >
-    <meta property="og:url" content="https://touchofambrosia.com">
-    <meta property="og:image" content="https://touchofambrosia.com/images/avatar.png">
+
+    <meta
+      property="og:url"
+      content="https://touchofambrosia.com"
+    >
+
+    <meta
+      property="og:image"
+      content="https://touchofambrosia.com/images/avatar.png"
+    >
+
     <meta name="twitter:card" content="summary">
 
+
     <!-- Font Preloads -->
+
     <link
       rel="preload"
       href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2"
@@ -63,13 +75,18 @@
       crossorigin
     >
 
+
     <!-- Stylesheets -->
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
 
+
     <!-- Homepage Styling -->
+
     <style>
+
 
       /* =========================
          INTRO
@@ -146,6 +163,56 @@
         font-size: 0.9rem;
         line-height: 1.5;
         opacity: 0.7;
+      }
+
+
+      /* =========================
+         SHOP
+      ========================= */
+
+      .shop-section {
+        margin-top: 3.5rem;
+        text-align: left;
+      }
+
+      .shop-card {
+        display: block;
+        padding: 1.5rem;
+        border-radius: 12px;
+        background: rgba(128, 128, 128, 0.05);
+        border: 1px solid rgba(128, 128, 128, 0.1);
+        color: inherit;
+        text-decoration: none;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .shop-card:hover {
+        transform: translateY(-3px);
+        background: rgba(128, 128, 128, 0.09);
+        border-color: rgba(128, 128, 128, 0.2);
+      }
+
+      .shop-card h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.35rem;
+      }
+
+      .shop-card p {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        opacity: 0.75;
+      }
+
+      .shop-link {
+        display: inline-block;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        opacity: 0.8;
       }
 
 
@@ -230,11 +297,14 @@
   <body>
 
     <div class="container">
+
       <div class="column">
 
         <main>
 
+
           <!-- Profile -->
+
           <img
             class="avatar avatar--rounded"
             src="images/avatar.png"
@@ -245,7 +315,13 @@
             fetchpriority="high"
           >
 
-          <h1>Amber Rasmussen</h1>
+
+          <h1>
+            Amber Rasmussen
+          </h1>
+
+
+          <!-- Introduction -->
 
           <div class="intro">
 
@@ -263,7 +339,11 @@
 
 
           <!-- Social Links -->
-          <nav class="button-stack" aria-label="Social Links">
+
+          <nav
+            class="button-stack"
+            aria-label="Social Links"
+          >
 
             <a
               class="button button-instagram"
@@ -271,14 +351,18 @@
               target="_blank"
               rel="noopener"
             >
+
               <img
                 class="icon"
                 aria-hidden="true"
                 src="images/icons/instagram.svg"
                 alt=""
               >
+
               Instagram
+
             </a>
+
 
             <a
               class="button button-tiktok"
@@ -286,102 +370,164 @@
               target="_blank"
               rel="noopener"
             >
+
               <img
                 class="icon"
                 aria-hidden="true"
                 src="images/icons/tiktok.svg"
                 alt=""
               >
+
               TikTok
+
             </a>
 
           </nav>
 
 
           <!-- Creative Areas -->
+
           <section class="creative-section">
 
             <h2 class="section-heading">
               What I'm Creating
             </h2>
 
+
             <div class="creative-grid">
 
+
               <!-- Barbering -->
+
               <a
                 href="categories/barbering.html"
                 class="creative-card"
                 aria-label="Explore Barbering"
               >
-                <h3>Barbering</h3>
+
+                <h3>
+                  Barbering
+                </h3>
 
                 <p>
                   Cuts, styles, techniques, transformations, and my journey
                   into the world of barbering.
                 </p>
+
               </a>
 
 
               <!-- Art -->
+
               <a
                 href="categories/art.html"
                 class="creative-card"
                 aria-label="Explore Art and Design"
               >
-                <h3>Art &amp; Design</h3>
+
+                <h3>
+                  Art &amp; Design
+                </h3>
 
                 <p>
                   Visual experiments, creative projects, aesthetics, and
                   things I make simply because I have to.
                 </p>
+
               </a>
 
 
               <!-- Technology -->
+
               <a
                 href="categories/technology.html"
                 class="creative-card"
                 aria-label="Explore Technology and Digital Projects"
               >
-                <h3>Tech &amp; Digital</h3>
+
+                <h3>
+                  Tech &amp; Digital
+                </h3>
 
                 <p>
                   Websites, automation, experiments, tools, and digital
                   projects I'm building along the way.
                 </p>
+
               </a>
 
 
               <!-- Business -->
+
               <a
                 href="categories/business.html"
                 class="creative-card"
                 aria-label="Explore Business and Ideas"
               >
-                <h3>Business &amp; Ideas</h3>
+
+                <h3>
+                  Business &amp; Ideas
+                </h3>
 
                 <p>
                   Side projects, entrepreneurial experiments, ideas,
                   brands, and turning concepts into something real.
                 </p>
+
               </a>
+
 
             </div>
 
           </section>
 
 
+          <!-- Shop -->
+
+          <section class="shop-section">
+
+            <a
+              href="shop.html"
+              class="shop-card"
+              aria-label="Shop barber and grooming products"
+            >
+
+              <div class="eyebrow">
+                Retail
+              </div>
+
+              <h2>
+                Shop My Picks
+              </h2>
+
+              <p>
+                Barbering and grooming products I've selected for their
+                quality, performance, and usefulness.
+              </p>
+
+              <span class="shop-link">
+                Browse Products →
+              </span>
+
+            </a>
+
+          </section>
+
+
           <!-- Blog -->
+
           <section class="blog-container">
 
             <h2 class="blog-heading">
               From The Journal
             </h2>
 
+
             <div class="blog-feed">
 
 
               <!-- Blog Post 1 -->
+
               <a
                 href="blog/welcome-to-touch-of-ambrosia.html"
                 class="blog-post"
@@ -392,9 +538,11 @@
                 </h3>
 
                 <div class="blog-meta">
+
                   <time datetime="2026-09-23">
                     September 23, 2026
                   </time>
+
                 </div>
 
                 <p class="blog-excerpt">
@@ -406,6 +554,7 @@
 
 
               <!-- Blog Post 2 -->
+
               <a
                 href="blog/my-creative-process.html"
                 class="blog-post"
@@ -416,9 +565,11 @@
                 </h3>
 
                 <div class="blog-meta">
+
                   <time datetime="2026-09-24">
                     September 24, 2026
                   </time>
+
                 </div>
 
                 <p class="blog-excerpt">
@@ -433,9 +584,11 @@
 
           </section>
 
+
         </main>
 
       </div>
+
     </div>
 
   </body>

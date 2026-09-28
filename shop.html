@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html class="theme-auto" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Page Title -->
+    <title>Shop Barber & Grooming Products | Touch of Ambrosia</title>
+
+    <link rel="icon" type="image/png" href="images/avatar.png">
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Shop barbering, grooming, and hair care products selected by Amber Rasmussen of Touch of Ambrosia."
+    >
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://touchofambrosia.com/shop.html">
+
+    <!-- Author -->
+    <meta name="author" content="Amber Rasmussen">
+
+    <!-- Browser UI Color -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+    <!-- Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shop | Touch of Ambrosia">
+    <meta
+      property="og:description"
+      content="Barbering, grooming, and hair care products selected by Touch of Ambrosia."
+    >
+    <meta property="og:url" content="https://touchofambrosia.com/shop.html">
+    <meta property="og:image" content="https://touchofambrosia.com/images/avatar.png">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Font Preloads -->
+    <link
+      rel="preload"
+      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+
+    <link
+      rel="preload"
+      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_greek-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+
+    <link
+      rel="preload"
+      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/brands.css">
+
+    <!-- Shop Styling -->
+    <style>
+
+      /* =========================
+         SHOP PAGE
+      ========================= */
+
+      .shop-container {
+        margin: 2rem auto;
+        max-width: 700px;
+        text-align: left;
+      }
+
+
+      /* =========================
+         BACK LINK
+      ========================= */
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 2rem;
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.6;
+        font-weight: 700;
+      }
+
+      .back-link:hover {
+        opacity: 1;
+      }
+
+
+      /* =========================
+         HEADER
+      ========================= */
+
+      .shop-header {
+        margin-bottom: 2.5rem;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+        padding-bottom: 1.5rem;
+      }
+
+      .eyebrow {
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        opacity: 0.55;
+        margin-bottom: 0.5rem;
+      }
+
+      .shop-header h1 {
+        margin-bottom: 0.75rem;
+      }
+
+      .shop-header p {
+        margin: 0;
+        line-height: 1.6;
+        opacity: 0.8;
+      }
+
+
+      /* =========================
+         CATEGORIES
+      ========================= */
+
+      .shop-categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .shop-category {
+        padding: 0.5rem 0.8rem;
+        border-radius: 999px;
+        background: rgba(128, 128, 128, 0.08);
+        border: 1px solid rgba(128, 128, 128, 0.12);
+        font-size: 0.8rem;
+        opacity: 0.8;
+      }
+
+
+      /* =========================
+         PRODUCT GRID
+      ========================= */
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+
+      /* =========================
+         PRODUCT CARD
+      ========================= */
+
+      .product-card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 12px;
+        background: rgba(128, 128, 128, 0.05);
+        border: 1px solid rgba(128, 128, 128, 0.1);
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .product-card:hover {
+        transform: translateY(-3px);
+        background: rgba(128, 128, 128, 0.09);
+        border-color: rgba(128, 128, 128, 0.2);
+      }
+
+
+      /* =========================
+         PRODUCT IMAGE
+      ========================= */
+
+      .product-image {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        display: block;
+        background: rgba(128, 128, 128, 0.08);
+      }
+
+
+      /* =========================
+         PRODUCT INFO
+      ========================= */
+
+      .product-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 1rem;
+      }
+
+      .product-category {
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 0.5;
+        margin-bottom: 0.4rem;
+      }
+
+      .product-name {
+        font-size: 1rem;
+        margin: 0 0 0.5rem;
+      }
+
+      .product-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        opacity: 0.7;
+        margin: 0 0 1rem;
+      }
+
+      .product-price {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: auto;
+        margin-bottom: 0.75rem;
+      }
+
+
+      /* =========================
+         BUY BUTTON
+      ========================= */
+
+      .product-button {
+        display: block;
+        width: 100%;
+        padding: 0.7rem 1rem;
+        border-radius: 8px;
+        background: rgba(128, 128, 128, 0.12);
+        border: 1px solid rgba(128, 128, 128, 0.15);
+        color: inherit;
+        text-align: center;
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 700;
+        transition:
+          background 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .product-button:hover {
+        background: rgba(128, 128, 128, 0.2);
+        border-color: rgba(128, 128, 128, 0.25);
+      }
+
+
+      /* =========================
+         SHOP NOTE
+      ========================= */
+
+      .shop-note {
+        margin-top: 2.5rem;
+        padding: 1rem;
+        border-left: 3px solid rgba(128, 128, 128, 0.35);
+        font-size: 0.85rem;
+        line-height: 1.5;
+        opacity: 0.65;
+      }
+
+
+      /* =========================
+         MOBILE
+      ========================= */
+
+      @media (max-width: 500px) {
+
+        .product-grid {
+          grid-template-columns: 1fr;
+        }
+
+      }
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <div class="container">
+      <div class="column">
+
+        <main class="shop-container">
+
+
+          <!-- Back to Homepage -->
+
+          <a
+            class="back-link"
+            href="index.html"
+          >
+            ← Back to Touch of Ambrosia
+          </a>
+
+
+          <!-- Shop Header -->
+
+          <header class="shop-header">
+
+            <div class="eyebrow">
+              Touch of Ambrosia Retail
+            </div>
+
+            <h1>
+              Shop My Picks
+            </h1>
+
+            <p>
+              Barbering and grooming products I've selected for their
+              performance, quality, and usefulness. Browse the products
+              available for purchase and find something worth adding to
+              your routine.
+            </p>
+
+          </header>
+
+
+          <!-- Categories -->
+
+          <div class="shop-categories">
+
+            <span class="shop-category">
+              Hair
+            </span>
+
+            <span class="shop-category">
+              Styling
+            </span>
+
+            <span class="shop-category">
+              Grooming
+            </span>
+
+            <span class="shop-category">
+              Barbering
+            </span>
+
+          </div>
+
+
+          <!-- Products -->
+
+          <section class="product-grid">
+
+
+            <!-- PRODUCT 1 -->
+
+            <article class="product-card">
+
+              <img
+                class="product-image"
+                src="images/products/product-1.jpg"
+                alt="Product Name"
+              >
+
+              <div class="product-info">
+
+                <div class="product-category">
+                  Styling
+                </div>
+
+                <h2 class="product-name">
+                  Product Name
+                </h2>
+
+                <p class="product-description">
+                  Add a short description of the product here.
+                </p>
+
+                <div class="product-price">
+                  $00.00
+                </div>
+
+                <a
+                  class="product-button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Shop Now →
+                </a>
+
+              </div>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+
+            <article class="product-card">
+
+              <img
+                class="product-image"
+                src="images/products/product-2.jpg"
+                alt="Product Name"
+              >
+
+              <div class="product-info">
+
+                <div class="product-category">
+                  Grooming
+                </div>
+
+                <h2 class="product-name">
+                  Product Name
+                </h2>
+
+                <p class="product-description">
+                  Add a short description of the product here.
+                </p>
+
+                <div class="product-price">
+                  $00.00
+                </div>
+
+                <a
+                  class="product-button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Shop Now →
+                </a>
+
+              </div>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+
+            <article class="product-card">
+
+              <img
+                class="product-image"
+                src="images/products/product-3.jpg"
+                alt="Product Name"
+              >
+
+              <div class="product-info">
+
+                <div class="product-category">
+                  Hair
+                </div>
+
+                <h2 class="product-name">
+                  Product Name
+                </h2>
+
+                <p class="product-description">
+                  Add a short description of the product here.
+                </p>
+
+                <div class="product-price">
+                  $00.00
+                </div>
+
+                <a
+                  class="product-button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Shop Now →
+                </a>
+
+              </div>
+
+            </article>
+
+
+            <!-- PRODUCT 4 -->
+
+            <article class="product-card">
+
+              <img
+                class="product-image"
+                src="images/products/product-4.jpg"
+                alt="Product Name"
+              >
+
+              <div class="product-info">
+
+                <div class="product-category">
+                  Barbering
+                </div>
+
+                <h2 class="product-name">
+                  Product Name
+                </h2>
+
+                <p class="product-description">
+                  Add a short description of the product here.
+                </p>
+
+                <div class="product-price">
+                  $00.00
+                </div>
+
+                <a
+                  class="product-button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Shop Now →
+                </a>
+
+              </div>
+
+            </article>
+
+
+          </section>
+
+
+          <!-- Shop Note -->
+
+          <div class="shop-note">
+            Product availability, pricing, and purchasing are handled through
+            the retailer linked to each product. Product selection may change
+            over time.
+          </div>
+
+
+        </main>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
