@@ -4,22 +4,28 @@
 
 <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- Page Title -->
 <title>Amber Rasmussen | Touch of Ambrosia</title>
 
 <link rel="icon" type="image/png" href="images/avatar.png">
 
+<!-- Meta Description -->
 <meta
   name="description"
   content="Touch of Ambrosia is the creative home of Amber Rasmussen — exploring barbering, art, technology, entrepreneurship, and everything in between."
 >
 
+<!-- Canonical URL -->
 <link rel="canonical" href="https://touchofambrosia.com">
 
+<!-- Author -->
 <meta name="author" content="Amber Rasmussen">
 
+<!-- Browser UI Color -->
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
 
+<!-- Social Sharing -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Amber Rasmussen | Touch of Ambrosia">
 
@@ -53,7 +59,7 @@
 
 <link
   rel="preload"
-  href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_greek_cyrillic-700.woff2"
+  href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2"
   as="font"
   type="font/woff2"
   crossorigin
@@ -61,7 +67,7 @@
 
 <link
   rel="preload"
-  href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_greek_cyrillic-800.woff2"
+  href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2"
   as="font"
   type="font/woff2"
   crossorigin
@@ -80,15 +86,17 @@
 <style>
 
   /* =========================
-     NAVIGATION
+     MODERN NAVIGATION
   ========================= */
 
   .site-nav {
     width: 100%;
     margin: 0 auto 2.5rem;
-    padding: 0.75rem 0;
-    border-top: 1px solid rgba(128, 128, 128, 0.15);
-    border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+    padding: 0.65rem;
+    background: #1f1b24;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   }
 
   .site-nav-inner {
@@ -100,27 +108,37 @@
   }
 
   .site-nav a {
-    display: inline-block;
-    padding: 0.5rem 0.7rem;
-    border-radius: 7px;
-    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    color: #f5f2f7;
     text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 700;
-    opacity: 0.65;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    opacity: 0.72;
     transition:
       background 0.2s ease,
-      opacity 0.2s ease;
+      color 0.2s ease,
+      opacity 0.2s ease,
+      transform 0.2s ease;
   }
 
   .site-nav a:hover {
-    background: rgba(128, 128, 128, 0.08);
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
     opacity: 1;
+    transform: translateY(-1px);
   }
 
   .site-nav a.active {
-    background: rgba(128, 128, 128, 0.08);
+    background: #d6a6e8;
+    color: #211925;
     opacity: 1;
+    box-shadow: 0 4px 14px rgba(214, 166, 232, 0.25);
   }
 
 
@@ -258,13 +276,18 @@
 
   @media (max-width: 500px) {
 
+    .site-nav {
+      padding: 0.5rem;
+      border-radius: 14px;
+    }
+
     .site-nav-inner {
-      gap: 0.15rem;
+      gap: 0.2rem;
     }
 
     .site-nav a {
-      padding: 0.45rem 0.5rem;
-      font-size: 0.72rem;
+      padding: 0.6rem 0.75rem;
+      font-size: 0.85rem;
     }
 
     .creative-grid {
@@ -288,46 +311,36 @@
 
       <!-- Site Navigation -->
 
-      <nav
-        class="site-nav"
-        aria-label="Main Navigation"
-      >
+<nav
+  class="site-nav"
+  aria-label="Main Navigation"
+>
 
-        <div class="site-nav-inner">
+  <div class="site-nav-inner">
 
-          <a
-            href="index.html"
-            class="active"
-            aria-current="page"
-          >
-            Home
-          </a>
+    <a
+      href="index.html"
+      class="active"
+      aria-current="page"
+    >
+      Home
+    </a>
 
-          <a href="categories/barbering.html">
-            Barbering
-          </a>
+    <a
+      href="https://shop.saloninteractive.com/store/touch-of-ambrosia-96484"
+      target="_blank"
+      rel="noopener"
+    >
+      Shop
+    </a>
 
-          <a href="categories/art.html">
-            Art
-          </a>
+    <a href="contact.html">
+      Contact
+    </a>
 
-          <a href="categories/technology.html">
-            Tech
-          </a>
+  </div>
 
-          <!-- SHOP: DIRECT LINK TO SALONINTERACTIVE -->
-
-          <a
-            href="https://shop.saloninteractive.com/store/touch-of-ambrosia-96484"
-            target="_blank"
-            rel="noopener"
-          >
-            Shop
-          </a>
-
-        </div>
-
-      </nav>
+</nav>
 
 
       <!-- Profile -->
@@ -353,13 +366,13 @@
       <div class="intro">
 
         <div class="eyebrow">
-          Creator • Entrepreneur • Builder
+          Creator • Entrepreneur
         </div>
 
         <p>
           Welcome to <strong>Touch of Ambrosia</strong> — my creative
-          corner of the internet where barbering, art, technology,
-          business, and whatever I'm building next come together.
+          corner of the internet where barbering, art, and whatever 
+          I'm building next come together.
         </p>
 
       </div>
