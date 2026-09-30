@@ -2,562 +2,561 @@
 
 <html class="theme-auto" lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Page Title -->
-    <title>Amber Rasmussen | Touch of Ambrosia</title>
-
-    <link rel="icon" type="image/png" href="images/avatar.png">
-
-    <!-- Meta Description -->
-    <meta
-      name="description"
-      content="Touch of Ambrosia is the creative home of Amber Rasmussen — exploring barbering, art, technology, entrepreneurship, and everything in between."
-    >
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://touchofambrosia.com">
-
-    <!-- Author -->
-    <meta name="author" content="Amber Rasmussen">
-
-    <!-- Browser UI Color -->
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
-
-    <!-- Social Sharing -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Amber Rasmussen | Touch of Ambrosia">
-
-    <meta
-      property="og:description"
-      content="Barbering, art, technology, entrepreneurship, and creative projects by Amber Rasmussen."
-    >
-
-    <meta
-      property="og:url"
-      content="https://touchofambrosia.com"
-    >
-
-    <meta
-      property="og:image"
-      content="https://touchofambrosia.com/images/avatar.png"
-    >
-
-    <meta name="twitter:card" content="summary">
-
-
-    <!-- Font Preloads -->
-
-    <link
-      rel="preload"
-      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-
-    <link
-      rel="preload"
-      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_greek_cyrillic-700.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-
-    <link
-      rel="preload"
-      href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_greek_cyrillic-800.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-
-
-    <!-- Stylesheets -->
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/brands.css">
-
-
-    <!-- Homepage Styling -->
-
-    <style>
-
-      /* =========================
-         NAVIGATION
-      ========================= */
-
-      .site-nav {
-        width: 100%;
-        margin: 0 auto 2.5rem;
-        padding: 0.75rem 0;
-        border-top: 1px solid rgba(128, 128, 128, 0.15);
-        border-bottom: 1px solid rgba(128, 128, 128, 0.15);
-      }
-
-      .site-nav-inner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 0.35rem;
-      }
-
-      .site-nav a {
-        display: inline-block;
-        padding: 0.5rem 0.7rem;
-        border-radius: 7px;
-        color: inherit;
-        text-decoration: none;
-        font-size: 0.8rem;
-        font-weight: 700;
-        opacity: 0.65;
-        transition:
-          background 0.2s ease,
-          opacity 0.2s ease;
-      }
-
-      .site-nav a:hover {
-        background: rgba(128, 128, 128, 0.08);
-        opacity: 1;
-      }
-
-      .site-nav a.active {
-        background: rgba(128, 128, 128, 0.08);
-        opacity: 1;
-      }
-
-
-      /* =========================
-         INTRO
-      ========================= */
-
-      .intro {
-        margin: 1.25rem auto 2rem;
-        max-width: 600px;
-      }
-
-      .intro p {
-        margin-top: 0.75rem;
-        line-height: 1.6;
-        opacity: 0.8;
-      }
-
-      .eyebrow {
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        opacity: 0.55;
-        margin-bottom: 0.5rem;
-      }
-
-
-      /* =========================
-         CREATIVE AREAS
-      ========================= */
-
-      .creative-section {
-        margin-top: 2.5rem;
-        text-align: left;
-      }
-
-      .section-heading {
-        font-size: 1.5rem;
-        margin-bottom: 1.25rem;
-      }
-
-      .creative-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-      }
-
-      .creative-card {
-        display: block;
-        padding: 1.25rem;
-        border-radius: 12px;
-        background: rgba(128, 128, 128, 0.05);
-        border: 1px solid rgba(128, 128, 128, 0.1);
-        color: inherit;
-        text-decoration: none;
-        transition:
-          transform 0.2s ease,
-          background 0.2s ease,
-          border-color 0.2s ease;
-      }
-
-      .creative-card:hover {
-        transform: translateY(-3px);
-        background: rgba(128, 128, 128, 0.09);
-        border-color: rgba(128, 128, 128, 0.2);
-      }
-
-      .creative-card h3 {
-        margin: 0 0 0.4rem;
-        font-size: 1.05rem;
-      }
-
-      .creative-card p {
-        margin: 0;
-        font-size: 0.9rem;
-        line-height: 1.5;
-        opacity: 0.7;
-      }
-
-
-      /* =========================
-         SHOP
-      ========================= */
-
-      .shop-section {
-        margin-top: 3.5rem;
-        text-align: left;
-      }
-
-      .shop-card {
-        display: block;
-        padding: 1.5rem;
-        border-radius: 12px;
-        background: rgba(128, 128, 128, 0.05);
-        border: 1px solid rgba(128, 128, 128, 0.1);
-        color: inherit;
-        text-decoration: none;
-        transition:
-          transform 0.2s ease,
-          background 0.2s ease,
-          border-color 0.2s ease;
-      }
-
-      .shop-card:hover {
-        transform: translateY(-3px);
-        background: rgba(128, 128, 128, 0.09);
-        border-color: rgba(128, 128, 128, 0.2);
-      }
-
-      .shop-card h2 {
-        margin: 0 0 0.5rem;
-        font-size: 1.35rem;
-      }
-
-      .shop-card p {
-        margin: 0;
-        font-size: 0.95rem;
-        line-height: 1.5;
-        opacity: 0.75;
-      }
-
-      .shop-link {
-        display: inline-block;
-        margin-top: 1rem;
-        font-size: 0.9rem;
-        font-weight: 700;
-        opacity: 0.8;
-      }
-
-
-      /* =========================
-         MOBILE
-      ========================= */
-
-      @media (max-width: 500px) {
-
-        .site-nav-inner {
-          gap: 0.15rem;
-        }
-
-        .site-nav a {
-          padding: 0.45rem 0.5rem;
-          font-size: 0.72rem;
-        }
-
-        .creative-grid {
-          grid-template-columns: 1fr;
-        }
-
-      }
-
-    </style>
-
-  </head>
-
-
-  <body>
-
-    <div class="container">
-
-      <div class="column">
-
-        <main>
-
-
-          <!-- Site Navigation -->
-
-          <nav
-            class="site-nav"
-            aria-label="Main Navigation"
+<head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Amber Rasmussen | Touch of Ambrosia</title>
+
+<link rel="icon" type="image/png" href="images/avatar.png">
+
+<meta
+  name="description"
+  content="Touch of Ambrosia is the creative home of Amber Rasmussen — exploring barbering, art, technology, entrepreneurship, and everything in between."
+>
+
+<link rel="canonical" href="https://touchofambrosia.com">
+
+<meta name="author" content="Amber Rasmussen">
+
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Amber Rasmussen | Touch of Ambrosia">
+
+<meta
+  property="og:description"
+  content="Barbering, art, technology, entrepreneurship, and creative projects by Amber Rasmussen."
+>
+
+<meta
+  property="og:url"
+  content="https://touchofambrosia.com"
+>
+
+<meta
+  property="og:image"
+  content="https://touchofambrosia.com/images/avatar.png"
+>
+
+<meta name="twitter:card" content="summary">
+
+
+<!-- Font Preloads -->
+
+<link
+  rel="preload"
+  href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>
+
+<link
+  rel="preload"
+  href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_greek_cyrillic-700.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>
+
+<link
+  rel="preload"
+  href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_greek_cyrillic-800.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>
+
+
+<!-- Stylesheets -->
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/brands.css">
+
+
+<!-- Homepage Styling -->
+
+<style>
+
+  /* =========================
+     NAVIGATION
+  ========================= */
+
+  .site-nav {
+    width: 100%;
+    margin: 0 auto 2.5rem;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.15);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+  }
+
+  .site-nav-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .site-nav a {
+    display: inline-block;
+    padding: 0.5rem 0.7rem;
+    border-radius: 7px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    opacity: 0.65;
+    transition:
+      background 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+  .site-nav a:hover {
+    background: rgba(128, 128, 128, 0.08);
+    opacity: 1;
+  }
+
+  .site-nav a.active {
+    background: rgba(128, 128, 128, 0.08);
+    opacity: 1;
+  }
+
+
+  /* =========================
+     INTRO
+  ========================= */
+
+  .intro {
+    margin: 1.25rem auto 2rem;
+    max-width: 600px;
+  }
+
+  .intro p {
+    margin-top: 0.75rem;
+    line-height: 1.6;
+    opacity: 0.8;
+  }
+
+  .eyebrow {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-bottom: 0.5rem;
+  }
+
+
+  /* =========================
+     CREATIVE AREAS
+  ========================= */
+
+  .creative-section {
+    margin-top: 2.5rem;
+    text-align: left;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .creative-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .creative-card {
+    display: block;
+    padding: 1.25rem;
+    border-radius: 12px;
+    background: rgba(128, 128, 128, 0.05);
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    color: inherit;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .creative-card:hover {
+    transform: translateY(-3px);
+    background: rgba(128, 128, 128, 0.09);
+    border-color: rgba(128, 128, 128, 0.2);
+  }
+
+  .creative-card h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+  }
+
+  .creative-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.7;
+  }
+
+
+  /* =========================
+     SHOP
+  ========================= */
+
+  .shop-section {
+    margin-top: 3.5rem;
+    text-align: left;
+  }
+
+  .shop-card {
+    display: block;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: rgba(128, 128, 128, 0.05);
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    color: inherit;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .shop-card:hover {
+    transform: translateY(-3px);
+    background: rgba(128, 128, 128, 0.09);
+    border-color: rgba(128, 128, 128, 0.2);
+  }
+
+  .shop-card h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.35rem;
+  }
+
+  .shop-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.75;
+  }
+
+  .shop-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    opacity: 0.8;
+  }
+
+
+  /* =========================
+     MOBILE
+  ========================= */
+
+  @media (max-width: 500px) {
+
+    .site-nav-inner {
+      gap: 0.15rem;
+    }
+
+    .site-nav a {
+      padding: 0.45rem 0.5rem;
+      font-size: 0.72rem;
+    }
+
+    .creative-grid {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="column">
+
+    <main>
+
+
+      <!-- Site Navigation -->
+
+      <nav
+        class="site-nav"
+        aria-label="Main Navigation"
+      >
+
+        <div class="site-nav-inner">
+
+          <a
+            href="index.html"
+            class="active"
+            aria-current="page"
           >
+            Home
+          </a>
 
-            <div class="site-nav-inner">
+          <a href="categories/barbering.html">
+            Barbering
+          </a>
 
-              <a
-                href="index.html"
-                class="active"
-                aria-current="page"
-              >
-                Home
-              </a>
+          <a href="categories/art.html">
+            Art
+          </a>
 
-              <a href="categories/barbering.html">
-                Barbering
-              </a>
+          <a href="categories/technology.html">
+            Tech
+          </a>
 
-              <a href="categories/art.html">
-                Art
-              </a>
+          <a href="categories/business.html">
+            Business
+          </a>
 
-              <a href="categories/technology.html">
-                Tech
-              </a>
+          <!-- SHOP: DIRECT LINK TO SALONINTERACTIVE -->
 
-              <a href="categories/business.html">
-                Business
-              </a>
-
-              <a href="shop.html">
-                Shop
-              </a>
-
-              <a href="blog.html">
-                Journal
-              </a>
-
-            </div>
-
-          </nav>
-
-
-          <!-- Profile -->
-
-          <img
-            class="avatar avatar--rounded"
-            src="images/avatar.png"
-            srcset="images/avatar@2x.png 2x"
-            alt="Amber Rasmussen Profile Picture"
-            width="128"
-            height="128"
-            fetchpriority="high"
+          <a
+            href="https://shop.saloninteractive.com/store/touch-of-ambrosia-96484"
+            target="_blank"
+            rel="noopener"
           >
+            Shop
+          </a>
 
+          <a href="blog.html">
+            Journal
+          </a>
 
-          <h1>
-            Amber Rasmussen
-          </h1>
+        </div>
 
+      </nav>
 
-          <!-- Introduction -->
 
-          <div class="intro">
+      <!-- Profile -->
 
-            <div class="eyebrow">
-              Creator • Entrepreneur • Builder
-            </div>
+      <img
+        class="avatar avatar--rounded"
+        src="images/avatar.png"
+        srcset="images/avatar@2x.png 2x"
+        alt="Amber Rasmussen Profile Picture"
+        width="128"
+        height="128"
+        fetchpriority="high"
+      >
 
-            <p>
-              Welcome to <strong>Touch of Ambrosia</strong> — my creative
-              corner of the internet where barbering, art, technology,
-              business, and whatever I'm building next come together.
-            </p>
 
-          </div>
+      <h1>
+        Amber Rasmussen
+      </h1>
 
 
-          <!-- Social Links -->
+      <!-- Introduction -->
 
-          <nav
-            class="button-stack"
-            aria-label="Social Links"
-          >
+      <div class="intro">
 
-            <a
-              class="button button-instagram"
-              href="https://instagram.com/touch.of.ambrosia"
-              target="_blank"
-              rel="noopener"
-            >
+        <div class="eyebrow">
+          Creator • Entrepreneur • Builder
+        </div>
 
-              <img
-                class="icon"
-                aria-hidden="true"
-                src="images/icons/instagram.svg"
-                alt=""
-              >
-
-              Instagram
-
-            </a>
-
-
-            <a
-              class="button button-tiktok"
-              href="https://tiktok.com"
-              target="_blank"
-              rel="noopener"
-            >
-
-              <img
-                class="icon"
-                aria-hidden="true"
-                src="images/icons/tiktok.svg"
-                alt=""
-              >
-
-              TikTok
-
-            </a>
-
-          </nav>
-
-
-          <!-- Creative Areas -->
-
-          <section class="creative-section">
-
-            <h2 class="section-heading">
-              What I'm Creating
-            </h2>
-
-
-            <div class="creative-grid">
-
-
-              <!-- Barbering -->
-
-              <a
-                href="categories/barbering.html"
-                class="creative-card"
-                aria-label="Explore Barbering"
-              >
-
-                <h3>
-                  Barbering
-                </h3>
-
-                <p>
-                  Cuts, styles, techniques, transformations, and my journey
-                  into the world of barbering.
-                </p>
-
-              </a>
-
-
-              <!-- Art -->
-
-              <a
-                href="categories/art.html"
-                class="creative-card"
-                aria-label="Explore Art and Design"
-              >
-
-                <h3>
-                  Art &amp; Design
-                </h3>
-
-                <p>
-                  Visual experiments, creative projects, aesthetics, and
-                  things I make simply because I have to.
-                </p>
-
-              </a>
-
-
-              <!-- Technology -->
-
-              <a
-                href="categories/technology.html"
-                class="creative-card"
-                aria-label="Explore Technology and Digital Projects"
-              >
-
-                <h3>
-                  Tech &amp; Digital
-                </h3>
-
-                <p>
-                  Websites, automation, experiments, tools, and digital
-                  projects I'm building along the way.
-                </p>
-
-              </a>
-
-
-              <!-- Business -->
-
-              <a
-                href="categories/business.html"
-                class="creative-card"
-                aria-label="Explore Business and Ideas"
-              >
-
-                <h3>
-                  Business &amp; Ideas
-                </h3>
-
-                <p>
-                  Side projects, entrepreneurial experiments, ideas,
-                  brands, and turning concepts into something real.
-                </p>
-
-              </a>
-
-
-            </div>
-
-          </section>
-
-
-          <!-- Shop -->
-
-          <section class="shop-section">
-
-            <a
-              href="shop.html"
-              class="shop-card"
-              aria-label="Shop barber and grooming products"
-            >
-
-              <div class="eyebrow">
-                Retail
-              </div>
-
-              <h2>
-                Shop My Picks
-              </h2>
-
-              <p>
-                Barbering and grooming products I've selected for their
-                quality, performance, and usefulness.
-              </p>
-
-              <span class="shop-link">
-                Browse Products →
-              </span>
-
-            </a>
-
-          </section>
-
-
-        </main>
+        <p>
+          Welcome to <strong>Touch of Ambrosia</strong> — my creative
+          corner of the internet where barbering, art, technology,
+          business, and whatever I'm building next come together.
+        </p>
 
       </div>
 
-    </div>
 
-  </body>
+      <!-- Social Links -->
+
+      <nav
+        class="button-stack"
+        aria-label="Social Links"
+      >
+
+        <a
+          class="button button-instagram"
+          href="https://instagram.com/touch.of.ambrosia"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <img
+            class="icon"
+            aria-hidden="true"
+            src="images/icons/instagram.svg"
+            alt=""
+          >
+
+          Instagram
+
+        </a>
+
+
+        <a
+          class="button button-tiktok"
+          href="https://tiktok.com"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <img
+            class="icon"
+            aria-hidden="true"
+            src="images/icons/tiktok.svg"
+            alt=""
+          >
+
+          TikTok
+
+        </a>
+
+      </nav>
+
+
+      <!-- Creative Areas -->
+
+      <section class="creative-section">
+
+        <h2 class="section-heading">
+          What I'm Creating
+        </h2>
+
+
+        <div class="creative-grid">
+
+
+          <!-- Barbering -->
+
+          <a
+            href="categories/barbering.html"
+            class="creative-card"
+            aria-label="Explore Barbering"
+          >
+
+            <h3>
+              Barbering
+            </h3>
+
+            <p>
+              Cuts, styles, techniques, transformations, and my journey
+              into the world of barbering.
+            </p>
+
+          </a>
+
+
+          <!-- Art -->
+
+          <a
+            href="categories/art.html"
+            class="creative-card"
+            aria-label="Explore Art and Design"
+          >
+
+            <h3>
+              Art &amp; Design
+            </h3>
+
+            <p>
+              Visual experiments, creative projects, aesthetics, and
+              things I make simply because I have to.
+            </p>
+
+          </a>
+
+
+          <!-- Technology -->
+
+          <a
+            href="categories/technology.html"
+            class="creative-card"
+            aria-label="Explore Technology and Digital Projects"
+          >
+
+            <h3>
+              Tech &amp; Digital
+            </h3>
+
+            <p>
+              Websites, automation, experiments, tools, and digital
+              projects I'm building along the way.
+            </p>
+
+          </a>
+
+
+          <!-- Business -->
+
+          <a
+            href="categories/business.html"
+            class="creative-card"
+            aria-label="Explore Business and Ideas"
+          >
+
+            <h3>
+              Business &amp; Ideas
+            </h3>
+
+            <p>
+              Side projects, entrepreneurial experiments, ideas,
+              brands, and turning concepts into something real.
+            </p>
+
+          </a>
+
+
+        </div>
+
+      </section>
+
+
+      <!-- Shop -->
+
+      <section class="shop-section">
+
+        <a
+          href="https://shop.saloninteractive.com/store/touch-of-ambrosia-96484"
+          class="shop-card"
+          target="_blank"
+          rel="noopener"
+          aria-label="Shop my barber and grooming product picks"
+        >
+
+          <div class="eyebrow">
+            Retail
+          </div>
+
+          <h2>
+            Shop My Picks
+          </h2>
+
+          <p>
+            Barbering and grooming products I've selected for their
+            quality, performance, and usefulness.
+          </p>
+
+          <span class="shop-link">
+            Browse Products →
+          </span>
+
+        </a>
+
+      </section>
+
+
+    </main>
+
+  </div>
+
+</div>
+
+</body>
 
 </html>
